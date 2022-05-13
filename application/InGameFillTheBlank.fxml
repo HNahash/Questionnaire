@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InGameFillTheBlankController">
+   <children>
+      <Pane layoutX="-99.0" layoutY="-158.0" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="300.0" layoutY="452.0" mnemonicParsing="false" onAction="#SaveAndExitGame" text="Save &amp; Exit" />
+            <Button layoutX="453.0" layoutY="399.0" mnemonicParsing="false" onAction="#NextQuestion" prefHeight="25.0" prefWidth="108.0" text="Next Question" />
+            <Button layoutX="115.0" layoutY="399.0" mnemonicParsing="false" onAction="#PreviousQuestion" prefHeight="25.0" prefWidth="126.0" text="Previous Question" />
+            <Pane layoutX="115.0" layoutY="250.0" prefHeight="108.0" prefWidth="463.0">
+               <children>
+                  <TextField fx:id="blank1" layoutX="132.0" layoutY="29.0" onAction="#getChoice" prefHeight="25.0" prefWidth="126.0" promptText="Answer 1" />
+                  <Label layoutX="16.0" layoutY="29.0" prefHeight="25.0" prefWidth="108.0" text="Label" />
+                  <Label layoutX="265.0" layoutY="29.0" prefHeight="25.0" prefWidth="189.0" text="Label" />
+                  <Label layoutX="16.0" layoutY="69.0" prefHeight="25.0" prefWidth="182.0" text="Label" />
+                  <TextField fx:id="blank2" layoutX="202.0" layoutY="69.0" onAction="#getChoice" prefHeight="25.0" prefWidth="163.0" promptText="Answer 2" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

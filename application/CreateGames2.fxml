@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateGames2Controller">
+   <children>
+      <Label layoutX="51.0" layoutY="30.0" text="TitleOftheGame">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="158.0" mnemonicParsing="false" onAction="#changeToAddoneQuestion" prefHeight="56.0" prefWidth="230.0" text="Add MCQ question with one answer" />
+      <Button layoutX="323.0" layoutY="234.0" mnemonicParsing="false" onAction="#RemoveQuestion" prefHeight="56.0" prefWidth="254.0" text="Remove question" />
+      <Button layoutX="323.0" layoutY="158.0" mnemonicParsing="false" onAction="#changeToAddmultipleQuestion" prefHeight="56.0" prefWidth="254.0" text="Add MCQ question with multiple answers" />
+      <Button layoutX="51.0" layoutY="234.0" mnemonicParsing="false" onAction="#changeToFIilQuestion" prefHeight="56.0" prefWidth="230.0" text="Add fill in the blank question" />
+      <Button layoutX="173.0" layoutY="306.0" mnemonicParsing="false" onAction="#SaveAndExit" prefHeight="56.0" prefWidth="254.0" text="Save and exit" />
+      <Button layoutX="185.0" layoutY="81.0" mnemonicParsing="false" onAction="#changeToBrowseQuestion" prefHeight="56.0" prefWidth="230.0" text="Browse existing questions" />
+   </children>
+</Pane>

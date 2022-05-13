@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BrowseGamesforGDController">
+   <children>
+      <Label layoutX="30.0" layoutY="91.0" text="area" />
+      <Label layoutX="179.0" layoutY="102.0" text="subarea" />
+      <Label layoutX="382.0" layoutY="102.0" text="Games" />
+      <ListView fx:id="areaList" layoutY="128.0" onMouseClicked="#areaSelected" prefHeight="355.0" prefWidth="162.0" />
+      <ListView fx:id="subareaList" layoutX="162.0" layoutY="128.0" onMouseClicked="#subareaSelected" prefHeight="355.0" prefWidth="194.0" />
+      <ListView fx:id="gamesList" layoutX="356.0" layoutY="128.0" prefHeight="355.0" prefWidth="200.0" />
+      <Button layoutX="567.0" layoutY="428.0" mnemonicParsing="false" onAction="#Return" text="return to main page" />
+      <Button layoutX="592.0" layoutY="161.0" mnemonicParsing="false" onAction="#GoToEditGame" text="Edit Game" />
+      <Label layoutX="53.0" layoutY="31.0" text="Browse Games">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
